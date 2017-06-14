@@ -21,29 +21,6 @@ import javax.servlet.http.HttpServletResponse;
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfig  extends ResourceServerConfigurerAdapter{
-//    private static final String RESOURCE_ID = "order-service";
-//
-//    @Autowired
-//    private RedisConnectionFactory connectionFactory;
-//
-//    @Bean
-//    public RedisTokenStore tokenStore(){
-//        return new RedisTokenStore(connectionFactory);
-//    }
-//
-//
-//    @Override
-//    public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-//        resources.resourceId(RESOURCE_ID).tokenServices(tokenServices());
-//    }
-
-//    @Bean
-//    @Primary
-//    public DefaultTokenServices tokenServices() {
-//        final DefaultTokenServices defaultTokenServices = new DefaultTokenServices();
-//        defaultTokenServices.setTokenStore(tokenStore());
-//        return defaultTokenServices;
-//    }
 
     @Override
     public void configure(HttpSecurity http) throws Exception {

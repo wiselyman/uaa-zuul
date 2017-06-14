@@ -33,6 +33,7 @@ security:
     client:
       access-token-uri: http://localhost:8080/uaa/oauth/token
       user-authorization-uri: http://localhost:8080/uaa/oauth/authorize
+      client-id: webapp
     resource:
       user-info-uri: http://localhost:8080/uaa/user
       prefer-token-info: false

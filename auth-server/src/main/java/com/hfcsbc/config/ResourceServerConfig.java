@@ -19,16 +19,6 @@ import javax.servlet.http.HttpServletResponse;
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
-//    private static final String RESOURCE_ID = "auth-service";
-//
-//    @Autowired
-//    private TokenStore tokenStore;
-//
-//
-//    @Override
-//    public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-//        resources.tokenStore(tokenStore).resourceId(RESOURCE_ID);
-//    }
 
     @Override
     public void configure(HttpSecurity http) throws Exception {

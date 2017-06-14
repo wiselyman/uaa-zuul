@@ -42,7 +42,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     private RedisConnectionFactory connectionFactory;
 
 
-
     @Bean
     public RedisTokenStore tokenStore() {
         return new RedisTokenStore(connectionFactory);
@@ -66,10 +65,13 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("webapp")
-                .secret("webapp")
-                .scopes("read","write")
+                .withClient("android")
+                .scopes("xx")
+                .secret("android")
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token")
-                .autoApprove(true);
+            .and()
+                .withClient("webapp")
+                .scopes("xx")
+                .authorizedGrantTypes("implicit");
     }
 }

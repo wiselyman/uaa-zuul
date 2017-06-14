@@ -29,9 +29,7 @@ import javax.servlet.http.HttpServletResponse;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-//
-//    @Autowired
-//    private UserDetailsService userDetailsService;
+
 
     @Bean
     public UserDetailsService userDetailsService(){
@@ -61,15 +59,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        auth.inMemoryAuthentication()
-//                .withUser("wyf").password("wyf").roles("USER")
-//                .and()
-//                .withUser("admin").password("admin").roles("ADMIN");
-//
-//    }
 
 
 

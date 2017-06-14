@@ -1,0 +1,35 @@
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  application:
+    name: order-service
+  redis:
+    host: 192.168.1.140
+#  cloud:
+#    config:
+#      uri: http://${config.host:192.168.1.140}:${config.port:8888}
+
+server:
+  port: 8083
+
+management.security.enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+
+feign.hystirx.enable: true
+security:
+  oauth2:
+    resource:
+      id: order-service
+      user-info-uri: http://localhost:8080/uaa/user
+      prefer-token-info: false
+
+logging.level.org.springframework.security: DEBUG
+
+
+
+
+

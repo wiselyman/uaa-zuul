@@ -1,0 +1,1 @@
+docker run -d -p 8888:8888 --restart always --name config localhost:5000/v2/config-service:0.0.1-SNAPSHOT

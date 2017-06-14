@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  application:
+      name: api-gateway
+#  cloud:
+#    config:
+#      uri: http://${config.host:192.168.1.140}:${config.port:8888}
+
+server:
+  port: 8080
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+
+zuul:
+  routes:
+    uaa:
+      path: /uaa/**
+      sensitiveHeaders:
+      serviceId: auth-server
+    order:
+      path: /order/**
+      sensitiveHeaders:
+      serviceId: order-service
+  add-proxy-headers: true
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8080/uaa/oauth/token
+      user-authorization-uri: http://localhost:8080/uaa/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:8080/uaa/user
+      prefer-token-info: false
+

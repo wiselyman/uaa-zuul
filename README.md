@@ -368,9 +368,49 @@ security:
 
 #### 5.1 客户端调用
 
-使用`Postman`向`http://localhost:8080/uaa/oauth/token`发送请求获得`access_token`(admin用户的如`7f9b54d4-fd25-4a2c-a848-ddf8f119230b`)，具体参数见图：
+使用`Postman`向`http://localhost:8080/uaa/oauth/token`发送请求获得`access_token`(admin用户的如`7f9b54d4-fd25-4a2c-a848-ddf8f119230b`)
+
+- admin用户
+
+  ![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/post-admin.png)
+
+  -------------
+
+  ​
+
+  ![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/user-admin.png)
+
+  -----------
+
+  ​
+
+  ![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/demo-admin.png)
+
+  -------
+
+  ​
+
+  ​
+
+- wyf用户
+
+  ![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/post-wyf.png)
+
+  ----
+
+  ​
+
+  ![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/user-wyf.png)
+
+  ----
+
+  ​
+
+  ![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/demo-wyf.png)
 
 
 
 #### 5.2 api-gateway中的webapp调用
+
+暂时没有做测试，下次补充。
 

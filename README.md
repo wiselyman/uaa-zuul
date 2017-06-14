@@ -57,6 +57,8 @@ PostgreSQL:
 
 ####  2.1 OAuth2服务配置
 
+`Redis`用来存储`token`，服务重启后，无需重新获取`token`.
+
 ```java
 @Configuration
 @EnableAuthorizationServer
@@ -91,10 +93,12 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
                 .withClient("android")
+                .scopes("xx") //此处的scopes是无用的，可以随意设置
                 .secret("android")
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token")
             .and()
                 .withClient("webapp")
+                .scopes("xx")
                 .authorizedGrantTypes("implicit");
     }
 }

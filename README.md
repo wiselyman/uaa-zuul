@@ -247,7 +247,11 @@ security:
 
 `data.sql`里初始化了两个用户`admin`->`ROLE_ADMIN`->`query_demo`,`wyf`->`ROLE_USER`
 
-#### ### 3.order-service
+
+
+### 3.order-service
+
+
 
 #### 3.1 Resource服务配置
 
@@ -305,7 +309,9 @@ public class DemoController {
 
 
 
-### ### 4 api-gateway
+### 4 api-gateway
+
+
 
 `api-gateway`在本例中有2个作用：
 

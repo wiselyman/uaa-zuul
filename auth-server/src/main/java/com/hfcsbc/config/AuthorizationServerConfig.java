@@ -52,6 +52,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints
                 .authenticationManager(authenticationManager)
+                .userDetailsService(userDetailsService)//若无，refresh_token会有UserDetailsService is required错误
                 .tokenStore(tokenStore());
     }
 

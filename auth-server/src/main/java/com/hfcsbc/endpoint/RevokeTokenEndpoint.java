@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by ZJ on 2017/7/24.
+ * Created by wangyunfei on 2017/7/24.
  */
 @FrameworkEndpoint
 public class RevokeTokenEndpoint {

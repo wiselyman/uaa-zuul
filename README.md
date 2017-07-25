@@ -425,3 +425,29 @@ security:
 
 暂时没有做测试，下次补充。
 
+### 6 注销oauth2
+#### 6.1 增加自定义注销`Endpoint`
+所谓注销只需将`access_token`和`refresh_token`失效即可，我们模仿`org.springframework.security.oauth2.provider.endpoint.TokenEndpoint`写一个使`access_token`和`refresh_token`失效的`Endpoint`:
+
+```
+@FrameworkEndpoint
+public class RevokeTokenEndpoint {
+
+    @Autowired
+    @Qualifier("consumerTokenServices")
+    ConsumerTokenServices consumerTokenServices;
+
+    @RequestMapping(method = RequestMethod.DELETE, value = "/oauth/token")
+    @ResponseBody
+    public String revokeToken(String access_token) {
+        if (consumerTokenServices.revokeToken(access_token)){
+            return "注销成功";
+        }else{
+            return "注销失败";
+        }
+    }
+}
+```
+
+#### 6.2 注销请求方式
+![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/logout.png)

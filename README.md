@@ -373,6 +373,11 @@ security:
       prefer-token-info: false
 ```
 
+#### 4.3 服务之间互调
+feign client没有将access token放入请求头里,需定义一个`OAuth2FeignRequestInterceptor`的bean：
+
+
+
 
 
 ### 5 演示

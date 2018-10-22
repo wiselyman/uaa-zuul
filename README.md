@@ -18,10 +18,10 @@ OAUTH2中的角色：
 
 Grant Type：
 
-- `Authorization Code`:用在服务端应用之间
-- `Implicit`:用在移动app或者web app(这些app是在用户的设备上的，如在手机上调起微信来进行认证授权)
-- `Resource Owner Password Credentials(password)`:应用直接都是受信任的(都是由一家公司开发的，本例子使用)
-- `Client Credentials`:用在应用API访问。
+- `authorization_code`:
+- `implicit`:
+- `password`:
+- `refrsh_token`:
 
 ### 1.基础环境
 

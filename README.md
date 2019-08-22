@@ -1,3 +1,18 @@
+我的新书《从企业级开发到云原生微服务:Spring Boot 实战》即将出版，内容涵盖了丰富Spring Boot开发的相关知识，主要包含目录有：
+- 第一章 初识Spring Boot(快速领略Spring Boot的美丽)
+- 第二章 开发必备工具(对常用开发工具进行介绍：包含IntelliJ IDEA、Gradle、Lombok、Docker等)
+- 第三章 函数式编程
+- 第四章 Spring 5.x基础(以Spring 5.2.x为基础)
+- 第五章 深入Spring Boot(以Spring Boot 2.2.x为基础)
+- 第六章 Spring Web MVC
+- 第七章 数据访问(包含Spring Data JPA、Spring Data Elasticsearch和数据缓存)
+- 第八章 安全控制(包含Spring Security和OAuth2)
+- 第九章 响应式编程(包含Project Reactor、Spring WebFlux、Reactive NoSQL、R2DBC、Reactive Spring Security)
+- 第十章 事件驱动(包含JMS、RabbitMQ、Kafka、Websocket、RSocket)
+- 第11章 系统集成和屁股里(包含Spring Integration和Spring Batch)
+- 第12章 Spring Cloud与微服务
+- 第13章 Kubernetes与微服务(包含Kubernetes、Helm、Jenkins、Istio)
+多谢大家支持。
 # Spring Cloud下基于OAUTH2认证授权的实现
 
 在`Spring Cloud`需要使用`OAUTH2`来实现多个微服务的统一认证授权，通过向`OAUTH服务`发送某个类型的`grant type`进行集中认证和授权，从而获得`access_token`，而这个token是受其他微服务信任的，我们在后续的访问可以通过`access_token`来进行，从而实现了微服务的统一认证授权。

@@ -13,6 +13,8 @@
 - 第12章 Spring Cloud与微服务
 - 第13章 Kubernetes与微服务(包含Kubernetes、Helm、Jenkins、Istio)
 多谢大家支持。
+
+京东购买地址：https://item.jd.com/12760084.html
 # Spring Cloud下基于OAUTH2认证授权的实现
 
 在`Spring Cloud`需要使用`OAUTH2`来实现多个微服务的统一认证授权，通过向`OAUTH服务`发送某个类型的`grant type`进行集中认证和授权，从而获得`access_token`，而这个token是受其他微服务信任的，我们在后续的访问可以通过`access_token`来进行，从而实现了微服务的统一认证授权。

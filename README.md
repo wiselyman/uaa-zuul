@@ -9,7 +9,7 @@
 - 第八章 安全控制(包含Spring Security和OAuth2)
 - 第九章 响应式编程(包含Project Reactor、Spring WebFlux、Reactive NoSQL、R2DBC、Reactive Spring Security)
 - 第十章 事件驱动(包含JMS、RabbitMQ、Kafka、Websocket、RSocket)
-- 第11章 系统集成和屁股里(包含Spring Integration和Spring Batch)
+- 第11章 系统集成和批处理(包含Spring Integration和Spring Batch)
 - 第12章 Spring Cloud与微服务
 - 第13章 Kubernetes与微服务(包含Kubernetes、Helm、Jenkins、Istio)
 多谢大家支持。
